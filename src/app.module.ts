@@ -2,6 +2,7 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ContactModule } from './Contact/contact.module';
+import { QuickEnquiryModule } from './quick-enquiry/quick-enquiry.module';
 
 
 
@@ -18,7 +19,7 @@ import { ContactModule } from './Contact/contact.module';
       synchronize: true,
     }),
    ContactModule,
-
+QuickEnquiryModule,
   ],
 })
 export class AppModule {}
